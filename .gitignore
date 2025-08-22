@@ -1,0 +1,50 @@
+# --- Python / build ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.eggs/
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.log
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+ENV/
+.python-version
+*.env
+
+# --- Caches / notebooks ---
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.code-workspace
+.history/
+*.swp
+
+# --- Artifacts (keep the main model, ignore everything else) ---
+artifacts/*
+!artifacts/logmel_logreg.joblib
+# optional: keep a placeholder so the folder exists
+#!artifacts/README.md
+
+# --- Generated audio you don’t want in git ---
+debug_samples/*.wav
+mic_*.wav
+mic_test.wav
+
+# If you DON'T want the ad-hoc sample file at repo root, uncomment next line:
+# sample.wav
