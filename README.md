@@ -1,8 +1,8 @@
-# FSDD Digit Classifier 🎤➡️🔢
+# FSDD Digit Classifier
 
 A fast, lightweight spoken digit classifier that converts audio input to predicted digits (0-9) using machine learning.
 
-## 🚀 Features
+## Features
 
 - **Audio Processing**: Real-time microphone input and WAV file support
 - **Feature Extraction**: 40-mel log spectrogram with delta features (240-dimensional)
@@ -10,14 +10,14 @@ A fast, lightweight spoken digit classifier that converts audio input to predict
 - **High Performance**: Sub-millisecond prediction latency
 - **Multiple Input Methods**: File-based inference, live microphone, and dataset training
 
-## 📊 Performance
+## Performance
 
 - **Accuracy**: 97.04%
 - **Macro-F1**: 97.04%
 - **Latency**: ~0.15ms (classifier only), few ms end-to-end
 - **Model Size**: Lightweight (few MB)
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Audio Input → Preprocessing → Feature Extraction → ML Model → Prediction
@@ -27,7 +27,7 @@ Audio Input → Preprocessing → Feature Extraction → ML Model → Prediction
                               240-D Features
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 fsdd-digit-classifier/
@@ -43,7 +43,7 @@ fsdd-digit-classifier/
 └── requirements.txt        # Python dependencies
 ```
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8+
@@ -73,7 +73,7 @@ fsdd-digit-classifier/
    pip install -r requirements.txt
    ```
 
-## 🎯 Usage
+## Usage
 
 ### 1. Train the Model
 
@@ -124,7 +124,7 @@ python -m src.export_one
 
 Creates `sample.wav` for testing.
 
-## 🔧 Configuration
+## Configuration
 
 ### Microphone Settings
 
@@ -146,7 +146,7 @@ n_fft = 512          # FFT window size
 hop = 128            # Hop length
 ```
 
-## 📚 Technical Details
+## Technical Details
 
 ### Feature Extraction Pipeline
 
@@ -175,7 +175,7 @@ Input (240-D) → StandardScaler → LogisticRegression → Output (0-9)
 - **LogisticRegression**: Multi-class classifier with LBFGS solver
 - **Training**: 80/20 stratified split, random_state=42
 
-## 📊 Dataset
+## Dataset
 
 **Free Spoken Digit Dataset (FSDD)**
 - **Source**: Hugging Face `mteb/free-spoken-digit-dataset`
@@ -184,7 +184,7 @@ Input (240-D) → StandardScaler → LogisticRegression → Output (0-9)
 - **Sampling Rate**: 8kHz (converted from original)
 - **License**: MIT
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -207,7 +207,7 @@ Input (240-D) → StandardScaler → LogisticRegression → Output (0-9)
 - Use specific microphone device index for stability
 - Ensure microphone access permissions are granted
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -215,11 +215,11 @@ Input (240-D) → StandardScaler → LogisticRegression → Output (0-9)
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is open source. See the repository for license details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Dataset**: [Free Spoken Digit Dataset](https://huggingface.co/datasets/mteb/free-spoken-digit-dataset)
 - **Audio Processing**: [librosa](https://librosa.org/)
@@ -227,4 +227,4 @@ This project is open source. See the repository for license details.
 
 ---
 
-**Made with ❤️ for audio machine learning enthusiasts**
+**Made with love for audio machine learning enthusiasts**
