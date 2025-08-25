@@ -1,5 +1,6 @@
 # FSDD Digit Classifier
 
+
 A fast, lightweight spoken digit classifier that converts audio input to predicted digits (0-9) using machine learning.
 
 ## Features
